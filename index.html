@@ -217,7 +217,7 @@
     </div>
 </div>
 
-<div class="credit">פלטפורמת חישוב | יוסי שלום עבור מוסך אילת © 2026</div>
+<div class="credit">פלטפורמת חישוב | Oz For Eilat garage © 2026</div>
 
 <script>
     const inputArea = document.getElementById('rawInput');
@@ -227,7 +227,6 @@
         const text = inputArea.value;
         const rate = parseFloat(rateInput.value) || 0;
 
-        // חיפוש "כמות עמלה: " ואז מספרים
         const feeMatches = text.match(/כמות עמלה:\s*([\d,]+)/g);
 
         let totalFees = 0;
@@ -255,7 +254,6 @@
         process();
     }
 
-    // הפעלת חישוב בזמן אמת
     inputArea.addEventListener('input', process);
     rateInput.addEventListener('input', process);
 </script>
